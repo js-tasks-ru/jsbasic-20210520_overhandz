@@ -18,6 +18,7 @@ slideRightArrow.addEventListener ('click', () => {
     if (slidePosition > 1) {
       slideLeftArrow.style.display = '';
     }
+    console.log (slidePosition);
 });
 
 slideLeftArrow.addEventListener ('click', () => {
@@ -30,5 +31,6 @@ slideLeftArrow.addEventListener ('click', () => {
   if (slidePosition == 1) {
     slideLeftArrow.style.display = 'none';
   }
+  console.log (slidePosition);
 });
 }
