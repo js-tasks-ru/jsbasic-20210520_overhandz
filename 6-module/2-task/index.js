@@ -22,7 +22,7 @@ let addedToCart = new CustomEvent("product-add", {
     bubbles: true
 });
 
-newProduct.addEventListener ('click', function (e) {
+newProduct.addEventListener('click', function (e) {
     if (e.target.classList.contains('card__button')) {
         newProduct.dispatchEvent(addedToCart);
     }
