@@ -1,7 +1,7 @@
 export default class UserTable {
 constructor(rows) {
-let newTable = document.createElement ('table');
-let tbody = document.createElement ('tbody');
+let newTable = document.createElement('table');
+let tbody = document.createElement('tbody');
 rows.forEach (item => {
 let newRow = document.createElement('tr');
 newRow.innerHTML = `
@@ -12,11 +12,11 @@ newRow.innerHTML = `
 <td><button>X</button></td>
 `;
 newTable.append(tbody);
-tbody.append (newRow);
+tbody.append(newRow);
 });
-newTable.addEventListener ('click', (e) => {
+newTable.addEventListener('click', (e) => {
   if (e.target.tagName === 'BUTTON') {
-    e.target.parentElement.parentElement.remove (); 
+    e.target.parentElement.parentElement.remove(); 
   }
 });
 this.elem = newTable;
