@@ -3,7 +3,7 @@ import createElement from '../../assets/lib/create-element.js';
 export default class ProductCard {
   constructor(product) {
     let newProduct = document.createElement('div');
-    newProduct.classList.add ('card');
+    newProduct.classList.add('card');
     newProduct.innerHTML = `
     <div class="card__top">
     <img src="/assets/images/products/${product.image}" class="card__image" alt="product">
